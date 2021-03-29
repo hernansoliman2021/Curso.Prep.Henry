@@ -1,2 +1,8 @@
-Variable: 
-Funcion:
+Explicaciones de conceptos.
+
+Variable: un tipo de dato puesto en memoria.
+Strings:  un tipo de dato de tipo carácter.
+Funciones argumentos, return: 
+Declaraciones if: una sentencia de condición si pasa algo o pasa lo otro.
+Valor booleanos: un tipo de dato de tipo verdadero o falso.
+
