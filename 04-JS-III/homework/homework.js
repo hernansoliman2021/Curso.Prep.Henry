@@ -147,10 +147,10 @@ function cuentoElementos(arreglo){
   var contador = 0;
   for (var i = 0; i < arreglo.length ; i++) {
     if(arreglo[i] > 19){
-      contador++
+      contador++;
     }
   }
-  return contador
+  return contador;
 }
 
 
@@ -160,9 +160,9 @@ function diaDeLaSemana(numeroDeDia) {
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
   if(numeroDeDia === 1 || numeroDeDia === 7 ){
-    return "Es fin de semana"
+    return "Es fin de semana";
   }
-  return "Es dia Laboral"
+  return "Es dia Laboral";
 } 
 
 
@@ -173,9 +173,9 @@ function empiezaConNueve(n) {
   //Escribe tu código aquí
   var num = n.toString()
   if(num.charAt(0) === "9"){
-    return true
+    return true;
   }
-  return false
+  return false;
 }
 
 
