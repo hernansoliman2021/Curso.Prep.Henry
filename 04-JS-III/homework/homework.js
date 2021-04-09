@@ -73,7 +73,9 @@ function arrayContiene(array, elemento) {
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
   
-  for(var i = 0; i < array.length; i++) {
+  for(var i = 0; 
+          i < array.length; 
+          i++) {
     if(array[i] === elemento) {
       return true;
     }
@@ -88,7 +90,9 @@ function agregarNumeros(numeros) {
   // Tu código:
   
   var suma = 0;
-  for(var i = 0; i < numeros.length; i++) {
+  for(var i = 0; 
+          i < numeros.length; 
+          i++) {
     suma = suma + numeros[i];
   }
   return suma;
@@ -100,7 +104,8 @@ function promedioResultadosTest(resultadosTest) {
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
   
-  return agregarNumeros(resultadosTest) / resultadosTest.length;
+  return agregarNumeros(resultadosTest) / 
+     resultadosTest.length;
   
 }
 
@@ -110,7 +115,9 @@ function numeroMasGrande(numeros) {
   // Devuelve el número más grande
   // Tu código:
   var maximo = numeros[0];
-  for(var i = 1; i < numeros.length; i++) {
+  for(var i = 1; 
+          i < numeros.length; 
+          i++) {
     if(numeros[i] > maximo) { 
       maximo = numeros[i];
     }
@@ -122,7 +129,7 @@ function numeroMasGrande(numeros) {
 
 function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
-  // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
+  // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
   
   if(arguments.length < 1) return 0;
@@ -137,8 +144,8 @@ function multiplicarArgumentos() {
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
-  let contador = 0;
-  for (let i = 0; i < arreglo.length ; i++) {
+  var contador = 0;
+  for (var i = 0; i < arreglo.length ; i++) {
     if(arreglo[i] > 19){
       contador++
     }
@@ -164,7 +171,7 @@ function empiezaConNueve(n) {
   //Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  let num = n.toString()
+  var num = n.toString()
   if(num.charAt(0) === "9"){
     return true
   }
