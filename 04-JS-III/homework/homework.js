@@ -171,7 +171,7 @@ function empiezaConNueve(n) {
   //Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  var num = n.toString()
+  var num = n.toString();
   if(num.charAt(0) === "9"){
     return true;
   }
@@ -201,8 +201,12 @@ function mesesDelAño(array) {
   // Tu código:
   
   var nuevoArray = [];
-  for(var i= 0; i<array.length; i++) {
-    if(array[i] === "Enero" || array[i] === "Marzo" || array[i] === "Noviembre") {
+  for(var i= 0; 
+          i<array.length; 
+          i++) {
+    if(array[i] === "Enero" || 
+       array[i] === "Marzo" || 
+       array[i] === "Noviembre") {
       nuevoArray.push(array[i]);
     }
   }
@@ -221,7 +225,9 @@ function mayorACien(array) {
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
   var nuevoArray = [];
-  for(var i= 0; i < array.length; i++) {
+  for(var i= 0; 
+          i < array.length; 
+          i++) {
     if(array[i] > 100) {
       nuevoArray.push(array[i]);
     }
@@ -243,7 +249,9 @@ function breakStatement(numero) {
   
   var array = [];
   var suma  = numero;
-  for(var i= 0; i<10; i++) {
+  for(var i= 0; 
+          i<10; 
+          i++) {
     suma = suma + 2;
     if(suma === i) break;
     else {
@@ -270,7 +278,9 @@ function continueStatement(numero) {
   // Tu código:
   var array = [];
   var suma  = numero;
-  for(var i= 0; i<10; i++) {
+  for(var i= 0; 
+          i<10; 
+          i++) {
     if(i === 5) continue;
     else {
       suma = suma + 2;
