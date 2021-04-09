@@ -1,9 +1,9 @@
   // No cambies los nombres de las funciones.
 
-function devolverPrimerElemento(array) {
+function devolverPrimerElemento(arr) {
   // Devuelve el primer elemento de un array
   // Tu código:
-  return (array[0]);
+  return (arr[0]);
 }
 
 function devolverUltimoElemento(array) {
