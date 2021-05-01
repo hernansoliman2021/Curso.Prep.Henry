@@ -1,6 +1,6 @@
 {
   "run": {
     "type": "task",
-    "task": "npm/test3"
+    "task": "project/T borrar"
   }
 }
