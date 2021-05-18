@@ -1,0 +1,19 @@
+Variables: Las variables son tipos de datos para almacenar en memoria, son como 
+una especie de reservorio para datos de diversos tipos.
+
+Strings: Los Strings son tipos de datos de letras y o numeros en formato de letras
+como por ejemplo "Hola mundo" o "test".
+
+Funciones (argumentos, return): Las funciones son expresiones para ejecutar tipos 
+de datos procesados previamente, los argumentos son datos para pasar a las funciones 
+y dar un retorno a esta. Y el retorno, "return" es una instruccion la cual da una 
+salida a la funcion ya sea esta de un tipo de dato determinado, pudiendo ser letra 
+o numero.
+
+Declaraciones if: Las declaraciones if son ambitos en los cuales se verifica una 
+o varias condiciones sean estas verdaderas o falsas. Estas se ejecutan si son 
+verdad o sino ejecutan otras instrucciones determinadas por usted.
+
+Valores booleanos (true, false): Los valores booleanos representan a valores 
+verdadesro o falso, y se suelen usar para indicar condiciones de declaraciones
+o enunciados de variables.
