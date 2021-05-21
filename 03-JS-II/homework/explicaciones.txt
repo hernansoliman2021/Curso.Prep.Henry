@@ -1,1 +1,9 @@
+Explicaciones para las palabras clave
 
+for: La palabra clave for es un bucle controlado con un inicio, un maximo 
+y un  contador de pasos.
+
+&&: Este es un Y logico, quiere decir que se puede evaluar una condicion "Y"
+la otra. 
+||:  Logico O, quiere decir que se puede evaluar una condicion o la otra. 
+! :  Negador dada la condicion la niega o sea b i sea esto.ç
