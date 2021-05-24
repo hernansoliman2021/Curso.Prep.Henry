@@ -81,7 +81,8 @@ function menosQueNoventa(num) {
   // Tu código:
   if (num < 90){
     return true;
-  else
+  }
+  else{
     return false;
   }
 }
@@ -118,7 +119,7 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if ( num%1 === 1 ){
+  if ( num % 2 === 1 ){
     return true; 
   }else {
     return false;
@@ -147,13 +148,13 @@ function elevar(num, exponent) {
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  return  (Math.round());
+  return  (Math.round(num));
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  return  (Math.ceil());
+  return  (Math.ceil(num));
 }
 
 function numeroRandom() {
@@ -190,7 +191,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return ("Hola" + nombre);
+  return ("Hola " + nombre + "!");
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -210,7 +211,7 @@ function retornarPerimetro(lado){
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-  return ( base * altura );
+  return ( base * altura ) / 2;
 
 }
 
