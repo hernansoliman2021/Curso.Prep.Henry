@@ -10,7 +10,7 @@ function obtenerMayor(x, y) {
   }
   if ( x < y ){
     return y;
-  else {
+  }else {
     return x;
   }
 }
@@ -19,7 +19,7 @@ function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
-  if ( edad > 18 ){
+  if ( edad >= 18 ){
     return "Allowed";
   }else {
     return "Not allowed";
@@ -36,7 +36,7 @@ function conection(status) {
     return "Online";
   }
   if ( status === 2 ){
-    return "Offline";
+    return "Away";
   }else {
     return "Offline";
   }
@@ -50,18 +50,18 @@ function saludo(idioma) {
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
   if ( idioma === "aleman" ){
-    return ( " Guten Tag !" );
+    return ( "Guten Tag!" );
   }
   if ( idioma === "mandarin" ){
-    return ( " Ni Hao! " )
+    return ( "Ni Hao!" )
   }
   if ( idioma === "ingles" ){
-    return (" Hello!" );
+    return ("Hello!" );
   }
   if ( idioma === 'undefined' ){
-    return (" Hola!" );
+    return ("Hola!" );
   }else {
-     return (" Hola!" );
+     return ("Hola!" );
   }
 }
 
@@ -125,17 +125,10 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
-  if ( numero % 3 === 0 ){
-    return "fizz";
-  }
-  if ( numero % 5 === 0 ){
-    return "buzz";
-  }
-  if ( numero % 3 && numero % 5 === 0 ){
-    return "fizzbuzz"; 
-  }else {
-    return  numero; 
-  }
+  if ( numero % 15 === 0 ) { return 'fizzbuzz'; }
+  if ( numero % 3  === 0 ) { return 'fizz';     }
+  if ( numero % 5  === 0 ) { return 'buzz';     }
+  else                     { return  numero;    }
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -145,19 +138,22 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
-  if ( num1 > num2 && num1 > num3 && num1 > 0 ) {
-    return  ("Numero 1 es mayor y positivo");
-  }
+
+
   if ( num1 < 0 || num2 < 0 || num3 < 0 ){
     return  ("Hay negativos");
+  }
+  if ( num1 === 0 || num2 === 0 || num3=== 0 ){
+    return ( "Error" ); 
+  }
+  if ( num1 > num2 && num1 > num3 && num1 > 0 ) {
+    return  ("Número 1 es mayor y positivo");
   }
   if ( num3 > num1 && num3 > num2 ){
     num3++;
     return ( num3 );
   }
-  if ( num1 === 0 || num2 === 0 || num3=== 0 ){
-    return ( " Error " ); 
-  }else {
+else {
     return ( false ); 
   }
 }
@@ -183,7 +179,7 @@ function esVerdadero(valor){
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
   if ( valor === true ){
-    return "Soy verdadero ";
+    return "Soy verdadero";
   }else {
     return "Soy falso";
   }
@@ -194,21 +190,43 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
-  
+ 
+  let arrayTablaDel6 = [];
+
+  for (var i = 0; i < 11; i++) {
+    arrayTablaDel6.push(6 * i);
+  }
+  return arrayTablaDel6;
+
+
+
 }
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
   
+  if (numero > 99 && numero < 1000) { return true;  }
+  else                              { return false; }
+
 }
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-}
 
+
+  let i   = numero;
+  let cnt = 0;
+
+  do{
+
+    i += 5;
+    cnt++;
+  }while(cnt < 8);
+  return i;
+}
 
 // No modificar nada debajo de esta línea
 // --------------------------------
