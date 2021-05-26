@@ -4,10 +4,7 @@ function mayuscula(nombre) {
   //La función recibe un nombre y debe devolver el mismo que recibe pero con su primer letra en mayúscula
   //ej: Recibe "mario" ----> Devuelve "Mario"
   //Tu código:
-  let nom = "";
-  nom = nombre;
-  nom[0].toUpperCase;
-  return (nom + nom.slice(1));
+  return (nombre[0].toUpperCase() + nombre.slice(1));
   
 }
 
@@ -55,15 +52,8 @@ function map(array, cb) {
   // Itera sobre cada valor en "array", pásalo a `cb` y luego ubicar el valor devuelto por `cb` en un nuevo array
   // El nuevo array debe tener la misma longitud que el array del argumento
   //Tu código:
-  var array = [1,2,3,4,5]
-  function cb (e) {console.log(e)}
-  nuevoarray = []
-  var nuevoArray = [];
-  for(var i = 0; i < array.length; i++) {
-    nuevoArray.push(cb(array[i]));
-    nuevoArray[i] = cb(array[i]);
-  }
-  
+  var nuevoArray = array.map(function(e1) { return cb(e1);} );
+  return nuevoArray;
 }
 
 function filter(array) {
@@ -71,7 +61,7 @@ function filter(array) {
   //Devolver un nuevo array con los elementos que cumplen la condición
   //Tu código:
   
-  let array = [];
+  //let array = [];
   let arrayNuevo = [];
   let i = 0;
   
